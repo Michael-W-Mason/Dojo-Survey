@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Results</title>
+</head>
+<body>
+    <h1>Submitted Info</h1>
+    <table>
+        <tr>
+            <th>Name:</th>
+            <th>Dojo Location:</th>
+            <th>Favorite Langauge:</th>
+            <th>Comment:</th>
+        </tr>
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ loc }}</td>
+            <td>{{ lang }}</td>
+            <td>{{ comment }}</td>
+        </tr>
+    </table>
+    <form action="/main" method="post">
+        <button type="submit">Go Back</button>
+    </form>
+</body>
+</html>
